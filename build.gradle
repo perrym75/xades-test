@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+jar {
+    baseName = 'xades-test'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.9
+targetCompatibility = 1.9
+
+dependencies {
+    compile("com.googlecode.xades4j:xades4j:1.4.0")
+    compile("javax.xml.bind:jaxb-api:2.3.0")
+    compile("com.sun.xml.bind:jaxb-core:2.3.0")
+    compile("com.sun.xml.bind:jaxb-impl:2.3.0")
+    compile("javax.activation:activation:1.1.1")
+}
